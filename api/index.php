@@ -15,12 +15,12 @@
     <h2 class="text-3xl font-semibold text-center mb-8">Pilih Tipe ARM</h2>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-      <div class="max-w-sm mx-auto bg-white rounded overflow-hidden shadow-lg">
+      <div class="max-w-md mx-auto bg-white rounded overflow-hidden shadow-lg transform hover:scale-105 transition duration-300">
         <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2">ARMv7</div>
-          <p class="text-gray-700 text-base">Download Aplikasi untuk ARMv7</p>
+          <div class="font-bold text-xl mb-2 text-center">ARMv7</div>
+          <p class="text-gray-700 text-base text-center">Download Aplikasi untuk ARMv7</p>
         </div>
-        <div class="px-6 pt-4 pb-2">
+        <div class="px-6 pt-4 pb-2 flex justify-center">
           <a href="link_update_armv7.apk"
             class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
             Download
@@ -28,12 +28,12 @@
         </div>
       </div>
 
-      <div class="max-w-sm mx-auto bg-white rounded overflow-hidden shadow-lg">
+      <div class="max-w-md mx-auto bg-white rounded overflow-hidden shadow-lg transform hover:scale-105 transition duration-300">
         <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2">ARM64</div>
-          <p class="text-gray-700 text-base">Download Aplikasi untuk ARM64</p>
+          <div class="font-bold text-xl mb-2 text-center">ARM64</div>
+          <p class="text-gray-700 text-base text-center">Download Aplikasi untuk ARM64</p>
         </div>
-        <div class="px-6 pt-4 pb-2">
+        <div class="px-6 pt-4 pb-2 flex justify-center">
           <a href="link_update_arm64.apk"
             class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
             Download
@@ -41,12 +41,12 @@
         </div>
       </div>
 
-      <div class="max-w-sm mx-auto bg-white rounded overflow-hidden shadow-lg">
+      <div class="max-w-md mx-auto bg-white rounded overflow-hidden shadow-lg transform hover:scale-105 transition duration-300">
         <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2">x86</div>
-          <p class="text-gray-700 text-base">Download Aplikasi untuk x86</p>
+          <div class="font-bold text-xl mb-2 text-center">x86</div>
+          <p class="text-gray-700 text-base text-center">Download Aplikasi untuk x86</p>
         </div>
-        <div class="px-6 pt-4 pb-2">
+        <div class="px-6 pt-4 pb-2 flex justify-center">
           <a href="link_update_x86.apk"
             class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
             Download
