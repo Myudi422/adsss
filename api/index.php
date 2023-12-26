@@ -11,50 +11,42 @@
 
 <body class="bg-gray-100">
 
-  <div class="container mx-auto mt-8">
-    <h2 class="text-3xl font-semibold text-center mb-8">Pilih Tipe ARM</h2>
+  <div class="container mx-auto mt-8 p-6 bg-white rounded-lg shadow-lg">
+    <h2 class="text-3xl font-semibold mb-4 text-center">Selamat Datang di Aplikasi Update!</h2>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <p class="text-gray-700 text-lg mb-8 text-center">
+      Untuk meningkatkan pengalaman Anda, pilih versi aplikasi sesuai dengan tipe ARM perangkat Anda.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <!-- ARMv7 Card -->
-      <div class="max-w-md mx-auto bg-white rounded overflow-hidden shadow-lg transform hover:scale-105 transition duration-300">
-        <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2 text-center">ARMv7</div>
-          <p class="text-gray-700 text-base text-center">Download Aplikasi untuk ARMv7</p>
-        </div>
-        <div class="px-6 pt-4 pb-2 flex justify-center">
-          <a href="link_update_armv7.apk"
-            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-            Download
-          </a>
-        </div>
+      <div class="max-w-md mx-auto bg-blue-200 rounded p-4">
+        <h3 class="text-xl font-semibold mb-2 text-center">ARMv7</h3>
+        <p class="text-gray-700 text-base mb-4 text-center">Pilihan terbaik untuk perangkat ARMv7.</p>
+        <a href="link_update_armv7.apk"
+          class="block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full text-center">
+          Download
+        </a>
       </div>
 
       <!-- ARM64 Card -->
-      <div class="max-w-md mx-auto bg-white rounded overflow-hidden shadow-lg transform hover:scale-105 transition duration-300">
-        <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2 text-center">ARM64</div>
-          <p class="text-gray-700 text-base text-center">Download Aplikasi untuk ARM64</p>
-        </div>
-        <div class="px-6 pt-4 pb-2 flex justify-center">
-          <a href="link_update_arm64.apk"
-            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-            Download
-          </a>
-        </div>
+      <div class="max-w-md mx-auto bg-green-200 rounded p-4">
+        <h3 class="text-xl font-semibold mb-2 text-center">ARM64</h3>
+        <p class="text-gray-700 text-base mb-4 text-center">Untuk perangkat dengan tipe ARM64.</p>
+        <a href="link_update_arm64.apk"
+          class="block bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full text-center">
+          Download
+        </a>
       </div>
 
       <!-- x86 Card -->
-      <div class="max-w-md mx-auto bg-white rounded overflow-hidden shadow-lg transform hover:scale-105 transition duration-300">
-        <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2 text-center">x86</div>
-          <p class="text-gray-700 text-base text-center">Download Aplikasi untuk x86</p>
-        </div>
-        <div class="px-6 pt-4 pb-2 flex justify-center">
-          <a href="link_update_x86.apk"
-            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-            Download
-          </a>
-        </div>
+      <div class="max-w-md mx-auto bg-yellow-200 rounded p-4">
+        <h3 class="text-xl font-semibold mb-2 text-center">x86</h3>
+        <p class="text-gray-700 text-base mb-4 text-center">Kompatibel dengan perangkat x86.</p>
+        <a href="link_update_x86.apk"
+          class="block bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded-full text-center">
+          Download
+        </a>
       </div>
     </div>
 
