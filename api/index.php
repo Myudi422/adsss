@@ -3,6 +3,8 @@
 $urls = [
     "https://www.highratecpm.com/j10z40hvf0?key=c9b7d12c462d2d6b4c6693a0de308ffa",
     "https://www.highratecpm.com/wnsqkxka?key=1cd0a432fe5974344f2cff5179d9951b",
+    "https://sighhigherapprove.com/h4k7q2gs5?key=581807036aac9f85bb9ff68b94c57247",
+    "https://sighhigherapprove.com/pfx282b3vy?key=72ba2eb37700e164e30d968e179da5d6",
     // Add more URLs as needed
 ];
 
@@ -33,7 +35,7 @@ echo '<!DOCTYPE html>
         fbq("track", "PageView", {}, {eventID: "randomEventID"});
         setTimeout(function() {
             window.location.href = "' . $randomUrl . '";
-        }, 2000); // Delay to ensure Pixel is tracked
+        }, 1000); // Delay to ensure Pixel is tracked
     </script>
     <noscript><img height="1" width="1" style="display:none"
         src="https://www.facebook.com/tr?id=1541410373161338&ev=PageView&noscript=1"
