@@ -9,7 +9,40 @@ $urls = [
 // Select a random URL
 $randomUrl = $urls[array_rand($urls)];
 
-// Redirect to the selected URL
-header("Location: $randomUrl");
+// Output HTML with Facebook Pixel and redirect logic
+echo '<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting To Videos...</title>
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,"script",
+        "https://connect.facebook.net/en_US/fbevents.js");
+        fbq("init", "1541410373161338"); // Your Pixel ID here
+        fbq("track", "PageView");
+
+        // Redirect after Pixel initialization
+        fbq("track", "PageView", {}, {eventID: "randomEventID"});
+        setTimeout(function() {
+            window.location.href = "' . $randomUrl . '";
+        }, 2000); // Delay to ensure Pixel is tracked
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1541410373161338&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+</head>
+<body>
+    <p>Redirecting you, please wait...</p>
+</body>
+</html>';
 exit(); // Ensure that no other content is sent
 ?>
